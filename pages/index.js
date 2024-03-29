@@ -12,7 +12,7 @@ const IndexPage = () => {
 
  const handleSubmit = async () => {
     try {
-        const response = await axios.post('https://ts73oepboe.execute-api.eu-central-1.amazonaws.com/polly', { text: inputValue });
+        const response = await axios.post('https://nnbgvwnxn1.execute-api.eu-central-1.amazonaws.com/polly-tts', { text: inputValue });
 
         const audioData = atob(response.data);
         // Convertir les données en tableau d'octets
